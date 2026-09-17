@@ -4,11 +4,14 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+     background: #e3efff;
+}
 
 .about{
     flex-direction: column;
     display: flex;
-    padding-left: 2%;
+    padding-left: 10px;
 
     h2{
         color: white;
@@ -35,6 +38,7 @@
     justify-content:space-evenly;
     align-items: center;
     background-color: #032b50;
+    box-shadow: 0px 0px 30px rgb(45, 131, 251);;
 }
 .contact{
     flex-direction: column;
@@ -51,6 +55,11 @@
     
 }
 
+.mail:hover, .tel:hover, #location:hover{
+    transition: 0.5s;
+    font-size:17px ;
+}
+
 
 .social{
     display: flex;
@@ -60,7 +69,7 @@
    
 }
 
-#link-btn, #git-btn, #leet-btn{
+#link-btn, #git-btn, #leet-btn, #insta-btn{
     display: flex;
     align-items: center;
     gap: .5rem;
@@ -76,7 +85,7 @@
     
 }
 
-#link-btn:hover, #git-btn:hover, #leet-btn:hover{
+#link-btn:hover, #git-btn:hover, #leet-btn:hover, #insta-btn:hover{
     border: 4px solid white;
 }
 
@@ -144,9 +153,18 @@
     gap: 3rem;
     padding: 3rem .5rem;
     margin-top: 50px;
-    background-color: #e5f0ff;
+    background-color: #b7d6ff;
     border-radius: 50px;
+    p{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
 }
+
+.summary:hover{
+    box-shadow: 0px 0px 30px rgba(39, 70, 222, 0.837);
+}
+
 .education{
     flex-direction: column;
     display: flex;
@@ -154,8 +172,12 @@
     gap: 2rem;
     padding: 3rem .5rem;
     margin-top: 50px;
-    background-color: #e5f0ff;
+    background-color: #b7d6ff;
     border-radius: 50px;
+}
+
+.education:hover{
+    box-shadow: 0px 0px 30px rgba(39, 70, 222, 0.837);;
 }
 
 .topic{
@@ -177,3 +199,179 @@
     border: 3px solid rgb(175, 62, 6);
     
 }
+
+.pro-head{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 15px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.line{
+    flex: 1;
+    height: 1px;
+    background: #3f89e9;
+    max-width: 350px;
+}
+
+.icon{
+    color: #275edf;
+    font-size: 20px;
+}
+
+.pro-head h2{
+    margin: 0;
+    font-size: 42px;
+    font-family: Georgia,serif;
+    font-weight: bold;
+    color: #000;
+}
+
+@media(max-width:768px){
+    .pro-head h2{
+        font-size: 1.5rem;
+    }
+
+    .line{
+        max-width: 50rem;
+    }
+
+    .icon{
+        font-size: 2rem;
+    }
+}
+.craving-corner{
+   
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    background-color: #b7d6ff;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.craving-corner:hover{
+    box-shadow: 0px 0px 30px rgba(39, 70, 222, 0.837);
+
+}
+
+.cav{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    h3{
+        color: rgb(4, 10, 141);
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background-color: transparent;
+    border: 2px solid rgb(2, 11, 94);
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    padding: .8rem .5rem;
+    font-size: .95rem;
+    font-weight: 600;
+    transition: .3s;
+    a{
+        text-decoration: none;
+    }
+}
+
+.form{
+    padding: 60px 20px;
+}
+
+.box{
+    max-width: 1100px;
+    margin: auto;
+    background: #fff;
+    padding: 35px;
+    border-radius: 50px;
+   
+}
+
+.box:hover{
+    box-shadow: 0px 0px 30px rgba(0, 0, 1, 0.837);
+}
+
+.box h2{
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+.form-group{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box label{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.input-box input, .input-box select, .input-box textarea{
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+}
+
+
+.input-box input:focus, .input-box select:focus, .input-box textarea:focus{
+    border-color: #084bdb;
+}
+
+textarea{
+    resize: none;
+    height: 140px;
+    margin-bottom: 50px;
+}
+
+.btn{
+    width: 100%;
+    background: #05337a;
+    color:#fff;
+    border: none;
+    padding: 18px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.btn :hover{
+    background: #1149f1;
+}
+
+.btn i{
+    margin-right:8px;
+}
+
+
