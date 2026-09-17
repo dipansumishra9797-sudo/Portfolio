@@ -317,8 +317,6 @@ body{
 }
 
 .form-group{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
     gap: 25px;
     margin-bottom: 25px;
 }
@@ -361,7 +359,7 @@ textarea{
     padding: 18px;
     font-size: 20px;
     border-radius: 10px;
-    cursor: pointer;
+    
     transition: .3s;
     text-decoration: none;
 }
